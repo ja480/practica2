@@ -29,6 +29,7 @@ def saludo(request):
     #return render(request, "miplantilla.html", {"nombre_persona":P1.nombre, "apellido_persona":P1.apellido, "hoy":ahora, "temas":temas_curso})
     return render(request, "miplantilla.html", {"nombre_persona":P1.nombre, "apellido_persona":P1.apellido, "hoy":ahora, "temas":temas_curso})
     #return(HttpResponse("Hola mundo"))
+    #Hola
 
 def despedida(request):
     documento = "<html><body><h1>Adios</h1></body></html>"
