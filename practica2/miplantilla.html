@@ -1,0 +1,33 @@
+<html>
+    {% include "cabecera/barra.html" %}
+    <body>
+        <h1>
+            Mi primer plantilla
+            <p>
+                El nombre es: {{nombre_persona|lower}} {{apellido_persona|first}}
+            </p>
+            <p>
+                Hoy es: {{hoy}}
+            </p>
+            <ul>
+                {% if temas %}
+                    {% for el_tema in temas %}
+                        <li><p>{{el_tema}}</p></li>
+                    {%endfor %}
+                {% else %}
+                <p>
+                   no hay elementos para mostrar
+                </p>
+                {% endif %} 
+                {# Este es un comentario #}
+                {% comment %}
+                Este
+                es un
+                comentario
+                de varias
+                lineas
+                {% endcomment %}
+            </ul>
+        </h1>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+#mibarra{
+    color: blue;
+    margin: 0px;
+    padding: 0 px;
+    list-style: none;
+    text-transform: uppercase;
+}
+#mibarra li{
+    color: blue;
+    display: inline;
+    margin: 0 30 px;
+}

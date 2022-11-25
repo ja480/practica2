@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+    {% include "barra.html" %}
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+    </head>
+    <body>
+        <h1>Mi empresa</h1>
+        <h3>Mis productos</h3>
+        {%block content%} {%endblock%}
+        <img src = '{% static "jpg/imagen1.jpg" %}' width="1920" height="768"></script>
+        <p>gracias por su visita</p>
+        <script type='text/javascript' src='{% static "js/plantilla.js" %}'></script>
+    </body>
+</html>
